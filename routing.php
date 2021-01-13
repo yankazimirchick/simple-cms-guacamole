@@ -43,8 +43,8 @@ $has_path=='false';
 
 
 ?>
-  <div id='toast' class="toast" style="position: absolute; top: 90px; right: 0;opacity: 1;z-index: 9999;">
-    <div class="toast-header">
+  <div   class="toast"  data-autohide="false" style="position: fixed; top: 90px; right: 0;opacity: 1;z-index: 9999;">
+    <div class="toast-header text-white bg-dark  ">
       <img src="..." class="rounded mr-2" alt="...">
       <strong class="mr-auto">Текущий Url</strong>
      
