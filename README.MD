@@ -1,8 +1,8 @@
-# CUSTOM CMS
+# CUSTOM COCA-COLA CMS?
 
 # STRUCTURE 
 
-  - Index
+  - Index.
   - Connect to bd
   - Config
   - Admin panel

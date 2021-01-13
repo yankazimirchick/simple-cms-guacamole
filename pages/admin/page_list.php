@@ -1,15 +1,15 @@
 
-
-
 <div class="container">
 
-<h2>Список пользователей </h2>
+
+<h2>Список Страниц </h2>
+
 
 <?php
-$user_list=getFromBd("SELECT * FROM users"); 
+$user_list=getFromBd("SELECT * FROM routing"); 
+//echo $user_list;
+echo("<table class='table'>");
 
-
-echo("<table class='table' >");
 echo("<thead class='thead-dark'>");
 
 

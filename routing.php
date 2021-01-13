@@ -1,7 +1,7 @@
 
 <?
 $url = $_SERVER['REQUEST_URI'];
-echo $url; 
+
 
 
 
@@ -11,6 +11,18 @@ if ($url=="/"){
 
 elseif ($url=="/admin"){  
     require  ($_SERVER['DOCUMENT_ROOT'].'/pages/admin/admin.php'); 
+}
+elseif ($url=="/register"){  
+    require  ($_SERVER['DOCUMENT_ROOT'].'/pages/register.php'); 
+}
+elseif ($url=="/auth"){  
+    require  ($_SERVER['DOCUMENT_ROOT'].'/pages/auth.php'); 
+}
+elseif ($url=="/action_register"){  
+    require  ($_SERVER['DOCUMENT_ROOT'].'/pages/action_register.php'); 
+}
+elseif ($url=="/action_auth"){  
+    require  ($_SERVER['DOCUMENT_ROOT'].'/pages/action_auth.php'); 
 }
 elseif ($url!=""){  
 
@@ -29,5 +41,5 @@ else{
     require ($_SERVER['DOCUMENT_ROOT'].'/404.php');
 }
 }*/
-
+echo $url; 
 ?>
