@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Cola CMS</title>
+    <title>GUA COMOLE CMS</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
 
@@ -22,8 +22,8 @@
   <body>
     <nav class="site-header sticky-top py-1">
   <div class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="#" aria-label="Product">
-        <img height="20" src="/assets/coca-cola.png" alt="">
+    <a class="" href="#" aria-label="Product">
+        <img height="40" src="/assets/logo.png" alt="">
   
     </a>
     <a class="py-2 d-none d-md-inline-block" href="/">Main</a>

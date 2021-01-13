@@ -5,7 +5,7 @@
   
   <div class="row ">
     <div class="col-12 col-md">
-    <img height="20" src="/assets/coca-cola.png" alt="">
+    <img height="50" src="/assets/logo.png" alt="">
       <small class="d-block mb-3 text-muted">coca-cola cms&copy; 2017-2021</small>
     </div>
     <div class="col-6 col-md d-none">

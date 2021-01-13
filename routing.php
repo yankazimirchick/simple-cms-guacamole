@@ -5,14 +5,8 @@ $url = $_SERVER['REQUEST_URI'];
 
 
 
-if ($url=="/"){  
-    require  ($_SERVER['DOCUMENT_ROOT'].'/pages/main_page.php'); 
-}
 
-elseif ($url=="/admin"){  
-    require  ($_SERVER['DOCUMENT_ROOT'].'/pages/admin/admin.php'); 
-}
-elseif ($url=="/register"){  
+if ($url=="/register"){  
     require  ($_SERVER['DOCUMENT_ROOT'].'/pages/register.php'); 
 }
 elseif ($url=="/auth"){  
@@ -24,22 +18,39 @@ elseif ($url=="/action_register"){
 elseif ($url=="/action_auth"){  
     require  ($_SERVER['DOCUMENT_ROOT'].'/pages/action_auth.php'); 
 }
-elseif ($url!=""){  
+else{  
 
-    //check path in bd
-    //include page if exist 
+
+//searching route in db
+$page_list=getFromBd("SELECT PageLink, PagePath FROM routing"); 
+
+$has_path='false';
+foreach ($page_list[1] as $key => $value) { 
+    $has_path='false';//variable 
+    if ( $value['PageLink']==$url){       
+       // echo('путь из бд');
+        require  ($_SERVER['DOCUMENT_ROOT'].$value['PagePath']);
+        $has_path='true';
+        break;
+    }
+    if( $has_path=='true'){break;}
+}
+if ($has_path=='false'){
     require  ($_SERVER['DOCUMENT_ROOT'].'/404.php'); 
 }
-
-/*
-else{
-
- if (file_exists($url)) {
-    require ($url);   
- }
-else{
-    require ($_SERVER['DOCUMENT_ROOT'].'/404.php');
+$has_path=='false';
 }
-}*/
-echo $url; 
+
+
 ?>
+  <div id='toast' class="toast" style="position: absolute; top: 90px; right: 0;opacity: 1;z-index: 9999;">
+    <div class="toast-header">
+      <img src="..." class="rounded mr-2" alt="...">
+      <strong class="mr-auto">Текущий Url</strong>
+     
+      
+    </div>
+    <div class="toast-body">
+     page_url = <?echo $url; ?>
+    </div>
+  </div>
