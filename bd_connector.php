@@ -50,17 +50,19 @@ function insertToBd($query){
     global $host, $user, $password, $database;  
     $link = mysqli_connect($host, $user, $password, $database) 
     or die("Ошибка " . mysqli_error($link));
-    $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
-
-
-
-if($result)
+    $result = mysqli_query($link, $query); 
+   
+    
+    if(mysqli_error($link))
 {
-   //выполнено
+    mysqli_close($link);
+    return ('false'); 
+    die();
+   
 }
-
-// закрываем подключение
 mysqli_close($link);
+
+
 }
 
 

@@ -26,10 +26,10 @@
         <img height="20" src="/assets/coca-cola.png" alt="">
   
     </a>
-    <a class="py-2 d-none d-md-inline-block" href="/">ГЛАВНАЯ</a>
-    <a class="py-2 d-none d-md-inline-block" href="/news">Новости</a>
-    <a class="py-2 d-none d-md-inline-block" href="/register">Регистрация</a>
-    <a class="py-2 d-none d-md-inline-block" href="admin">Админка</a>
+    <a class="py-2 d-none d-md-inline-block" href="/">Main</a>
+    <a class="py-2 d-none d-md-inline-block" href="/news">News</a>
+    <a class="py-2 d-none d-md-inline-block" href="/register">Registration</a>
+    <a class="py-2 d-none d-md-inline-block" href="admin">Admin Panel</a>
    
   </div>
 </nav>

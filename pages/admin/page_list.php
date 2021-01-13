@@ -2,7 +2,7 @@
 <div class="container">
 
 
-<h2>Список Страниц </h2>
+<h2>Page List </h2>
 
 
 <?php

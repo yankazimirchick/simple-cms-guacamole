@@ -3,7 +3,7 @@
 
 <div class="container">
 
-<h2>Список пользователей </h2>
+<h2>User List </h2>
 
 <?php
 $user_list=getFromBd("SELECT * FROM users"); 
